@@ -8,7 +8,7 @@ var mayella = { name: "Mayella", employeeNumber: "89068", annualSalary: "35000",
 var employees = [ atticus, jem, boo, scout, robert, mayella ];
 
 // YOU SHOULD NOT NEED TO CHANGE ANYTHING ABOVE THIS POINT
-
+//We created a function that takes in the employees array and outputs a new array that contains objects with the new key:value pairs added for each person
 
 function bonusCalculator(employeeArray){
   for (var i = 0; i < employeeArray.length; i++) {

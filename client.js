@@ -8,7 +8,7 @@ var mayella = { name: "Mayella", employeeNumber: "89068", annualSalary: "35000",
 var employees = [ atticus, jem, boo, scout, robert, mayella ];
 
 // YOU SHOULD NOT NEED TO CHANGE ANYTHING ABOVE THIS POINT
-
+// This is our starting constructor function that works on individual employee objects and outputs new objects with those new properties
 
 function BonusCalculator(employeeObject){
   var bonusPercent = 0;
@@ -45,14 +45,12 @@ var compTotal = Number(employeeObject.annualSalary) + bonusAmount;
 }
 
 
+// Testing here
+// var scoutBonus = new BonusCalculator(scout);
+// var jemBonus = new BonusCalculator(jem);
 
-// var scoutsBonusThing = new BonusCalculator(scout);
-//
-// console.log(scoutsBonusThing);
 
-var employeesBonuses={};
-
+//Logging to the console the new objects
 for (var i = 0; i < employees.length; i++) {
-  employeesBonuses.push(new BonusCalculator(employees[i]));
+  console.log(new BonusCalculator(employees[i]));
 }
-console.log(employeesBonuses);
